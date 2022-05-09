@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import { FiMenu } from 'react-icons/fi'
+import { MdClose } from 'react-icons/md'
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <div className='navbar-container'>
-        <h1>JONATHAN BACKLIN</h1>
-        <div className="navbar-links">
-            <Link className='navbar-link' to="/">About</Link>
-            <Link className='navbar-link' to="/">Skills</Link>
-            <Link className='navbar-link' to="/">Skills</Link>
-        </div>
-        
+      <Link className='navbar-h1' to="/">JONATHAN BACKLIN</Link>
+      <div style={{ position: 'relative', zIndex: '11' }}>
+        <button onClick={handleToggle} className='navbar-button'>{isOpen ? <MdClose /> : <FiMenu />}</button>
+      </div>
+      <div className={`navbar-links ${isOpen ? 'showMenu' : ""}`}>
+        <Link className='navbar-link' to="/">About Me</Link>
+        <Link className='navbar-link' to="/">Projects</Link>
+        <Link className='navbar-link' to="/">Skills</Link>
+      </div>
     </div>
   )
 }
