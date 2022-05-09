@@ -1,0 +1,23 @@
+/* .main-page-container {
+  height: 70vh;
+  width: 90%;
+  margin: 10px auto;
+  background-color: #15133C;
+  border-radius: 10px;
+} */
+
+.main-page-container {
+  margin: 10px 0;
+}
+
+
+.main-page-container .typical-typing {
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+.main-page-container span:hover {
+  color: #15133C;
+}

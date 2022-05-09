@@ -1,0 +1,30 @@
+.sidebar-page-wrapper {
+  width: 100%;
+  background-color: rgb(244, 227, 227);
+  border: 1px solid black;
+}
+
+/*
+.sidebar-page-container {
+  display: grid;
+  grid-template-columns: repeat(48, 1fr);
+  width: 90%;
+  margin: 30px auto;
+}
+
+
+
+.sidebar-left-side,
+.sidebar-right-side {
+  height: 70vh;
+  background-color: #15133C;
+  border-radius: 10px;
+}
+
+.sidebar-left-side {
+  grid-column: 1 / 29;
+}
+
+.sidebar-right-side {
+  grid-column: 30 / 49;
+} */
