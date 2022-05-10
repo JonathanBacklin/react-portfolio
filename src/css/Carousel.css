@@ -6,12 +6,19 @@
   display: grid;
   place-items: center;
   overflow: hidden;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1em;
 }
 
 .slide-track {
   display: flex;
-  width: calc(250px*18);
-  animation: scroll 40s linear infinite;
+  width: calc(200px*12);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  animation: scroll 10s linear infinite alternate;
+
 }
 
 .slide-track:hover {
@@ -24,24 +31,27 @@
   }
 
   100% {
-    transform: translateX(calc(-250px * 9));
+    transform: translateX(calc(-180px * 6));
   }
 }
 
 .slide {
-  height: 200px;
-  width: 250px;
-  display: flex;
+  width: 200px;
+  display: grid;
+  justify-content: center;
   align-items: center;
-  padding: 15px;
   perspective: 50px;
+  margin: 0;
+  padding: 0;
 }
 
-.slider img {
+.slider .icon {
   width: 100%;
-  transition: transform 1s;
+  font-size: 70px;
+  transition: transform 150ms;
+  margin-bottom: 3px;
 }
 
-.slider img:hover {
+.slide-track .icon:hover {
   transform: translateZ(10px);
 }
