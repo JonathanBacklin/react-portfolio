@@ -1,16 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../css/Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 import { MdClose } from 'react-icons/md'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [scroll, setScroll] = useState(1);
 
   const handleToggle = () => {
     setIsOpen(!isOpen)
   }
+
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollCheck = window.scrollY > 10;
+      setScroll(scrollCheck);
+    };
+    document.addEventListener("scroll", onScroll);
+    return () => {
+      document.removeEventListener("scroll", onScroll);
+    };
+  }, [scroll, setScroll]);
   return (
-    <div className='header-wrapper'>
+    <div className={`header-wrapper ${scroll ? "navbar-scrolled" : null}`}>
       <div className='navbar-container'>
         <a href='/'><h1 className='navbar-h1'>JONATHAN BACKLIN</h1></a>
         <div style={{ position: 'relative', zIndex: '11' }}>

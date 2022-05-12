@@ -1,4 +1,5 @@
 .slider {
+  background-color: #15133C;
   height: 250px;
   margin: auto;
   position: relative;
@@ -17,7 +18,7 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  animation: scroll 10s linear infinite alternate;
+  animation: scroll 10s linear infinite;
 
 }
 
@@ -43,6 +44,7 @@
   perspective: 50px;
   margin: 0;
   padding: 0;
+  color: rgb(240, 32, 74);
 }
 
 .slider .icon {
@@ -50,6 +52,7 @@
   font-size: 70px;
   transition: transform 150ms;
   margin-bottom: 3px;
+  color: rgb(240, 32, 74);
 }
 
 .slide-track .icon:hover {

@@ -1,7 +1,6 @@
 .sidebar-page-wrapper {
   width: 100%;
-  background-color: rgb(244, 227, 227);
-  border: 1px solid black;
+
 }
 
 .sidebar-page-container {
@@ -13,10 +12,10 @@
 
 
 
+
 .sidebar-left-side,
 .sidebar-right-side {
-  height: 70vh;
-  background-color: lightblue;
+  background: #15133C;
   border-radius: 10px;
   padding: 1em;
 }
@@ -29,6 +28,18 @@
   grid-column: 30 / 49;
 }
 
+.sidebar-left-side h1,
+.sidebar-right-side h1 {
+  text-align: center;
+  color: rgb(240, 32, 74);
+}
+
+.sidebar-right-side p {
+  color: rgb(240, 32, 74);
+  padding: 0;
+  margin: 0;
+}
+
 .sidebar-right-side .container {
   width: 100%;
   background-color: #ddd;
@@ -39,29 +50,140 @@
   margin: 10px 0;
   padding: 0 0.5em;
   color: white;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: 5px;
 }
 
-
-.sidebar-right-side .container .react {
-  width: 90%;
-  background-color: #04AA6D;
+.skills h6 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.sidebar-right-side .container .js {
-  width: 80%;
+.scroll1 {
+  animation: one 1s ease-in-out;
+  animation-delay: 150ms;
+}
+
+.scrollJS {
+  animation: one 1s ease-in-out;
+  animation-delay: 200ms;
+}
+
+.scroll2 {
+  animation: two 1s ease-in-out;
+  animation-delay: 250ms;
+}
+
+.scroll3 {
+  animation: three 1s ease-in-out;
+  animation-delay: 300ms;
+}
+
+.scroll4 {
+  animation: four 1s ease-in-out;
+  animation-delay: 350ms;
+}
+
+.scroll5 {
+  animation: five 1s ease-in-out;
+  animation-delay: 375ms;
+}
+
+.sidebar-right-side .container .react {
+  max-width: 90%;
   background-color: #2196F3;
 }
 
+.sidebar-right-side .container .js {
+  max-width: 90%;
+  background-color: #04AA6D;
+}
+
 .sidebar-right-side .container .node {
-  width: 75%;
+  max-width: 75%;
   background-color: #f44336;
 }
 
 .sidebar-right-side .container .mongodb {
-  width: 70%;
+  max-width: 70%;
   background-color: #808080;
+}
+
+.sidebar-right-side .container .bootstrap {
+  max-width: 60%;
+  background-color: #be6969;
+}
+
+.sidebar-right-side .container .github {
+  max-width: 80%;
+  background-color: #544141;
+}
+
+@keyframes one {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
+  }
+
+}
+
+@keyframes two {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+
+}
+
+@keyframes three {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 75%;
+  }
+
+}
+
+@keyframes four {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+
+}
+
+@keyframes five {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 60%;
+  }
+
+}
+
+@media(max-width:1600px) {
+
+  .sidebar-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-left-side,
+  .sidebar-right-side {
+    margin: 10px 0;
+  }
 }

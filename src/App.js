@@ -6,11 +6,13 @@ import Sidebar from './ComponentsBigger/Sidebar';
 function App() {
   return (
     <div className="App">
-      {/* Certificates,recommendations,attests */}
+      {/* Certificates,recommendations,attests,goals,open for work etc,contact */}
       <Navbar />
-      <Mainpage />
-      <Carousel />
-      <Sidebar />
+      <div className='actual-page'>
+        <Mainpage />
+        <Carousel />
+        <Sidebar />
+      </div>
     </div>
   );
 }
