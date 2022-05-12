@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/Mainpage.css'
+import '../css/Mainpage.css'
 import Typical from 'react-typical'
 
 const Mainpage = () => {

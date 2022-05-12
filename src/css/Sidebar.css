@@ -4,7 +4,6 @@
   border: 1px solid black;
 }
 
-/*
 .sidebar-page-container {
   display: grid;
   grid-template-columns: repeat(48, 1fr);
@@ -17,8 +16,9 @@
 .sidebar-left-side,
 .sidebar-right-side {
   height: 70vh;
-  background-color: #15133C;
+  background-color: lightblue;
   border-radius: 10px;
+  padding: 1em;
 }
 
 .sidebar-left-side {
@@ -27,4 +27,41 @@
 
 .sidebar-right-side {
   grid-column: 30 / 49;
-} */
+}
+
+.sidebar-right-side .container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.sidebar-right-side .skills {
+  margin: 10px 0;
+  padding: 0 0.5em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+.sidebar-right-side .container .react {
+  width: 90%;
+  background-color: #04AA6D;
+}
+
+.sidebar-right-side .container .js {
+  width: 80%;
+  background-color: #2196F3;
+}
+
+.sidebar-right-side .container .node {
+  width: 75%;
+  background-color: #f44336;
+}
+
+.sidebar-right-side .container .mongodb {
+  width: 70%;
+  background-color: #808080;
+}

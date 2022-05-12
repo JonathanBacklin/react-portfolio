@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/Carousel.css'
+import '../css/Carousel.css'
 import { FaReact } from 'react-icons/fa'
 import { ImHtmlFive } from 'react-icons/im'
 import { BsFillBootstrapFill } from 'react-icons/bs'
@@ -12,7 +12,7 @@ const Carousel = () => {
       <h1 style={{ textAlign: 'center' }}>WHAT I KNOW</h1>
       <div className='slider'>
         {/* Skills section is twice, once with the carousel and then my highlighted knowledge in react/js */}
-        {/* HTML/CSS & JS,REACT,REST,BOOTSTRAP,TAILWIND,SCSS,NODE,EXPRESS,MONGODB,GITHUB,SCRUM,VSC, */}
+        {/* HTML/CSS & JS,REACT,REST,BOOTSTRAP,TAILWIND,SCSS,NODE,EXPRESS,MONGODB,GITHUB,SCRUM,POSTMAN, */}
         <div className="slide-track">
           <div className="slide"><ImHtmlFive className='icon' />HTML</div>
           <div className="slide"><DiCss3 className='icon' />CSS</div>

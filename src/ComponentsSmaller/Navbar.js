@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './css/Navbar.css'
+import '../css/Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 import { MdClose } from 'react-icons/md'
 
