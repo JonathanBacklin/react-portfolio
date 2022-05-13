@@ -1,0 +1,42 @@
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons a,
+.information h2 {
+  margin: 0 5px;
+}
+
+@media(max-width:767px) {
+
+  .footer-wrapper,
+  .information {
+    display: block;
+    text-align: center;
+  }
+
+
+  .information h2:nth-child(2),
+  .information h2:nth-child(3) {
+    display: none;
+  }
+
+  .icons a,
+  .information h2 {
+    margin: 0;
+  }
+}

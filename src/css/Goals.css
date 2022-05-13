@@ -1,0 +1,50 @@
+.goals-wrapper,
+.steps-wrapper {
+  background-color: #15133C;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.goals-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.goals-wrapper .box h2,
+.goals-wrapper .box .icon {
+  color: white;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box .icon {
+  font-size: 50px;
+}
+
+.steps-wrapper ol {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.steps-wrapper ol li {
+  color: white;
+}
+
+@media(max-width:1000px) {
+
+  .goals-container {
+    flex-direction: column;
+
+  }
+
+  .steps-wrapper ol {
+    flex-direction: column;
+    align-items: center;
+  }
+}

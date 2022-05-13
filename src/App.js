@@ -1,18 +1,22 @@
 import Carousel from './ComponentsSmaller/Carousel';
-import Mainpage from './ComponentsBigger/Mainpage';
 import Navbar from './ComponentsSmaller/Navbar';
 import Sidebar from './ComponentsBigger/Sidebar';
+import Goals from './ComponentsBigger/Goals';
+import Typing from './ComponentsBigger/Typing';
+import Footer from './ComponentsSmaller/Footer';
 
 function App() {
   return (
     <div className="App">
-      {/* Certificates,recommendations,attests,goals,open for work etc,contact */}
+      {/* Certificates,recommendations,attests,goals,open for work etc,contact,download CV swedish english */}
       <Navbar />
       <div className='actual-page'>
-        <Mainpage />
+        <Typing />
         <Carousel />
         <Sidebar />
+        <Goals />
       </div>
+      <Footer />
     </div>
   );
 }
