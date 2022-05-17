@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      const scrollCheck = window.scrollY > 10;
+      const scrollCheck = window.scrollY > 20;
       setScroll(scrollCheck);
     };
     document.addEventListener("scroll", onScroll);

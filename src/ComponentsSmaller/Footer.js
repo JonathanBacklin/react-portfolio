@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../css/Footer.css"
 let APIKEY = "10b4612fbea7aa55e920f65dafaca399"
-let URL = `https://api.openweathermap.org/data/2.5/weather?q=stockholm&units=metric&appid=${APIKEY}`
+let URL = `https://api.openweathermap.org/data/2.5/weather?q=frankfurt&units=metric&appid=${APIKEY}`
 const Footer = () => {
   const [temp, setTemp] = useState()
 
@@ -9,13 +9,12 @@ const Footer = () => {
     const fetchData = async () => {
       let res = await fetch(URL)
       let resJson = await res.json()
-      console.log(resJson.main)
+      console.log(resJson)
       setTemp(resJson.main.temp)
 
     }
     fetchData()
   })
-  // get weather aswell
 
   let roundedTemp = Math.round(temp)
   let getDate = new Date()

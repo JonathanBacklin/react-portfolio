@@ -5,6 +5,7 @@ import { ImHtmlFive } from 'react-icons/im'
 import { BsFillBootstrapFill } from 'react-icons/bs'
 import { SiTailwindcss, SiExpress, SiMongodb, SiSqlite } from 'react-icons/si'
 import { DiCss3, DiNodejsSmall, DiJavascript1, DiSass, DiGithubBadge, DiScrum } from 'react-icons/di'
+import { CgCPlusPlus } from 'react-icons/cg'
 
 const Carousel = () => {
   return (
@@ -28,6 +29,8 @@ const Carousel = () => {
           <div className="slide"><DiSass className='icon' />SASS</div>
           <div className="slide"><BsFillBootstrapFill className='icon' />BOOTSTRAP</div>
           <div className="slide"><SiTailwindcss className='icon' />TAILWIND</div>
+          <div className="slide"><CgCPlusPlus className='icon' />C++</div>
+
         </div>
       </div>
     </div>
