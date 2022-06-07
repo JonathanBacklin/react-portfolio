@@ -1,9 +1,6 @@
 .carousel-wrapper {
-  width: 90%;
-  margin: 0 auto;
-  background-color: #15133C;
   border-radius: 5px;
-  padding: 1em;
+
 }
 
 .slider {
@@ -18,11 +15,12 @@
 
 .slide-track {
   display: flex;
-  width: calc(200px*13);
+  width: calc(200px*14);
+  white-space: no-wrap;
   padding: 0;
   margin: 0;
   text-align: center;
-  animation: scroll 10s linear infinite;
+  animation: scroll 15s linear infinite;
 
 }
 
@@ -31,17 +29,13 @@
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
   100% {
-    transform: translateX(calc(-200px*6.5));
+    transform: translateX(-1500px);
   }
 }
 
 .slide {
-  width: 200px;
+  width: 100%;
   display: grid;
   justify-content: center;
   align-items: center;

@@ -18,7 +18,13 @@ body {
 }
 
 .actual-page {
-    margin-top: 10rem;
+    width: 90%;
+    margin: 10rem auto 0 auto;
+}
+
+.component-wrapper-class {
+    background-color: #15133C;
+    padding: 1em;
 }
 
 h1 {

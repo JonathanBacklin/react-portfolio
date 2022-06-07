@@ -9,7 +9,7 @@ import { CgCPlusPlus } from 'react-icons/cg'
 
 const Carousel = () => {
   return (
-    <div className='carousel-wrapper'>
+    <div className='carousel-wrapper component-wrapper-class'>
       <h1 style={{ textAlign: 'center' }}>WHAT I KNOW</h1>
       <div className='slider'>
         {/* Skills section is twice, once with the carousel and then my highlighted knowledge in react/js */}

@@ -3,9 +3,10 @@ import '../css/Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 import { MdClose } from 'react-icons/md'
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [scroll, setScroll] = useState(1);
+  const [scroll, setScroll] = useState(0);
 
   const handleToggle = () => {
     setIsOpen(!isOpen)
@@ -14,7 +15,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      const scrollCheck = window.scrollY > 20;
+      const scrollCheck = window.scrollY > 50;
+      // console.log(scrollCheck)
       setScroll(scrollCheck);
     };
     document.addEventListener("scroll", onScroll);
@@ -23,7 +25,7 @@ const Navbar = () => {
     };
   }, [scroll, setScroll]);
   return (
-    <div className={`header-wrapper ${scroll ? "navbar-scrolled" : null}`}>
+    <div className={` header-wrapper ${scroll ? "navbar-scrolled" : ""}`}>
       <div className='navbar-container'>
         <a href='/'><h1 className='navbar-h1'>JONATHAN BACKLIN</h1></a>
         <div style={{ position: 'relative', zIndex: '11' }}>

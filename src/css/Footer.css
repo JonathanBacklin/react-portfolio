@@ -1,9 +1,9 @@
 .footer-wrapper {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .information {
@@ -19,6 +19,11 @@
 .icons a,
 .information h2 {
   margin: 0 5px;
+  color: #15133C;
+}
+
+.icons a h4 {
+  padding: 0.2em;
 }
 
 @media(max-width:767px) {

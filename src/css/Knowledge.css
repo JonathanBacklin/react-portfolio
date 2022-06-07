@@ -1,0 +1,71 @@
+.knowledge-wrapper {
+  border-radius: 5px;
+}
+
+.knowledge-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.knowledge-header::before {
+  content: 'WHAT I KNOW';
+  margin: 0 auto;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 10px 0;
+  color: white;
+}
+
+.frontend-grid,
+.middle-grid,
+.backend-grid {
+  width: 100%;
+  display: inline-block;
+  color: white;
+  /* text-align: center; */
+  padding: 0.5em;
+}
+
+.frontend-knowledge h2,
+.backend-knowledge h2,
+.middle-knowledge h2 {
+  color: white;
+  text-decoration: underline;
+}
+
+.frontend-grid h3:nth-child(odd),
+.middle-grid h3:nth-child(odd),
+.backend-grid h3:nth-child(odd) {
+  color: rgb(240, 32, 74);
+}
+
+.frontend-grid {
+  text-align: left;
+}
+
+.middle-grid {
+  text-align: center;
+}
+
+.backend-grid {
+  text-align: right;
+}
+
+@media(max-width:767px) {
+  .knowledge-container {
+    display: block;
+  }
+
+  .frontend-knowledge,
+  .frontend-grid,
+  .middle-knowledge,
+  .middle-grid,
+  .backend-knowledge,
+  .backend-grid {
+    text-align: center;
+  }
+}

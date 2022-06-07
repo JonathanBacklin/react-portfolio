@@ -21,13 +21,13 @@ const Sidebar = () => {
   return (
     <div className='sidebar-page-wrapper'>
       <div className='sidebar-page-container'>
-        <div className='sidebar-left-side'>
-          <h1>PROGRAMMING EDUCATION</h1>
+        <div className='sidebar-left-side component-wrapper-class'>
+          <h1 className='education-header'>EDUCATION</h1>
           <Timeline />
         </div>
-        <div className="sidebar-right-side">
+        <div className="sidebar-right-side component-wrapper-class">
           {/* when u scroll to this section the animations trigger  */}
-          <h1>WHAT I SPECIALIZE IN</h1>
+          <h1 className='specialize-header'>FOCUS</h1>
 
           <p>REACT</p>
           <div className="container">

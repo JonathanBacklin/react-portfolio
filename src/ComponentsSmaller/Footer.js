@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "../css/Footer.css"
+import CV from '../assets/JonathanBacklinCV.pdf'
+
+
+
 let APIKEY = "10b4612fbea7aa55e920f65dafaca399"
 let URL = `https://api.openweathermap.org/data/2.5/weather?q=frankfurt&units=metric&appid=${APIKEY}`
 const Footer = () => {
@@ -34,6 +38,7 @@ const Footer = () => {
       <div className="icons">
         <a href="https://www.linkedin.com/in/jonathan-b%C3%A4cklin-417a1420b/" target="_blank" rel="noreferrer"><h4>LinkedIn</h4></a>
         <a href="https://www.github.com/JonathanBacklin" target="_blank" rel="noreferrer"><h4>Github</h4></a>
+        <a href={CV} download><h4 style={{ border: '1px solid black', borderRadius: '5px' }}>Download CV</h4></a>
       </div>
     </div>
   )

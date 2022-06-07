@@ -1,0 +1,36 @@
+.projects-wrapper {
+  border-radius: 5px;
+  padding: 2em;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.projects-header::before {
+  content: 'WHAT I CREATED';
+  margin: 0 auto;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 10px 0;
+  color: white;
+}
+
+.projects-wrapper .published-projects h1,
+.projects-wrapper .unpublished-projects h1 {
+  color: rgb(240, 32, 74);
+}
+
+.projects-wrapper h2 {
+  color: white;
+  font-style: italic;
+  text-decoration: underline rgb(240, 32, 74);
+}
