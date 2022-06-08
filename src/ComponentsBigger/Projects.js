@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Projects.css'
 const Projects = () => {
   return (
-    <div className='projects-wrapper component-wrapper-class'>
+    <section id='projects' className='projects-wrapper component-wrapper-class'>
       <h1 className='projects-header'>PROJECTS</h1>
       <div className="projects-container">
         <div className="published-projects">
@@ -16,7 +16,7 @@ const Projects = () => {
           <a href="https://jonathanbacklin.github.io/TMDB/" target="_blank"><h2>School Platform</h2></a>
         </div>
       </div>
-    </div>
+    </section >
   )
 }
 

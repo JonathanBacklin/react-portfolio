@@ -1,16 +1,18 @@
 .knowledge-wrapper {
   border-radius: 5px;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 .knowledge-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
   padding: 1em;
 }
 
 .knowledge-header::before {
-  content: 'WHAT I KNOW';
+  content: 'WHO I AM';
   margin: 0 auto;
   display: block;
   font-size: 15px;
@@ -20,8 +22,14 @@
   color: white;
 }
 
+.code-wrapper {
+  grid-column: 1 / 13;
+  display: flex;
+  justify-content: space-between;
+}
+
 .frontend-grid,
-.middle-grid,
+.about-grid,
 .backend-grid {
   width: 100%;
   display: inline-block;
@@ -32,24 +40,35 @@
 
 .frontend-knowledge h2,
 .backend-knowledge h2,
-.middle-knowledge h2 {
+.about-knowledge h2 {
   color: white;
   text-decoration: underline;
 }
 
+.about-knowledge {
+  grid-column: 8 / 13;
+  text-align: center;
+}
+
 .frontend-grid h3:nth-child(odd),
-.middle-grid h3:nth-child(odd),
+.about-grid h3:nth-child(odd),
 .backend-grid h3:nth-child(odd) {
   color: rgb(240, 32, 74);
+}
+
+.pfp-pic {
+  width: 50%;
+}
+
+.about-me-text {
+  grid-column: 3 / 7;
+  color: white;
 }
 
 .frontend-grid {
   text-align: left;
 }
 
-.middle-grid {
-  text-align: center;
-}
 
 .backend-grid {
   text-align: right;
@@ -62,8 +81,8 @@
 
   .frontend-knowledge,
   .frontend-grid,
-  .middle-knowledge,
-  .middle-grid,
+  .about-knowledge,
+  .about-grid,
   .backend-knowledge,
   .backend-grid {
     text-align: center;

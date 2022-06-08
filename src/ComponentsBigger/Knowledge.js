@@ -1,11 +1,20 @@
 import React from 'react'
 import '../css/Knowledge.css'
+import pfp from '../assets/Jonte.jpeg'
 const Knowledge = () => {
   return (
-    <div>
-      <div className="knowledge-wrapper component-wrapper-class">
-        <h1 className='knowledge-header'>EXPERIENCE</h1>
-        <div className="knowledge-container">
+    <section id='about-me' className="knowledge-wrapper component-wrapper-class">
+      <h1 className='knowledge-header'>ABOUT ME</h1>
+      <div className="knowledge-container">
+        <div className="about-me-text">
+          <p>Experienced Fullstack Developer with focus on Javascript. Familiar with development strategies such as SCRUM & XP</p>
+        </div>
+        <div className="about-knowledge">
+          <div className="about-grid">
+            <img src={pfp} alt="profile pic" className='pfp-pic' />
+          </div>
+        </div>
+        <div className="code-wrapper">
           <div className="frontend-knowledge">
             <h2>FRONTEND</h2>
             <div className="frontend-grid">
@@ -15,13 +24,6 @@ const Knowledge = () => {
               <h3>CSS</h3>
               <h3>BOOTSTRAP</h3>
               <h3>TAILWIND</h3>
-            </div>
-          </div>
-          <div className="middle-knowledge">
-            <h2>DEVELOPMENT</h2>
-            <div className="middle-grid">
-              <h3>SCRUM</h3>
-              <h3>XP</h3>
             </div>
           </div>
           <div className="backend-knowledge">
@@ -37,7 +39,7 @@ const Knowledge = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

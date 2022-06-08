@@ -32,9 +32,9 @@ const Navbar = () => {
           <button onClick={handleToggle} className='navbar-button'>{isOpen ? <MdClose /> : <FiMenu />}</button>
         </div>
         <div className={`navbar-links ${isOpen ? 'showMenu' : ""}`}>
-          <a href='/'><h2 className='navbar-link'>About Me</h2></a>
-          <a href='/'><h2 className='navbar-link'>Projects</h2></a>
-          <a href='/'><h2 className='navbar-link'>Skills</h2></a>
+          <a href='#about-me'><h2 className='navbar-link'>About Me</h2></a>
+          <a href='#skills'><h2 className='navbar-link'>Skills</h2></a>
+          <a href='#projects'><h2 className='navbar-link'>Projects</h2></a>
         </div>
       </div>
     </div>

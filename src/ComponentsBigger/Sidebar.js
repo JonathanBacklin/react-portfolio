@@ -19,54 +19,52 @@ const Sidebar = () => {
   }, [scroll, setScroll]);
 
   return (
-    <div className='sidebar-page-wrapper'>
-      <div className='sidebar-page-container'>
-        <div className='sidebar-left-side component-wrapper-class'>
-          <h1 className='education-header'>EDUCATION</h1>
-          <Timeline />
-        </div>
-        <div className="sidebar-right-side component-wrapper-class">
-          {/* when u scroll to this section the animations trigger  */}
-          <h1 className='specialize-header'>FOCUS</h1>
-
-          <p>REACT</p>
-          <div className="container">
-            <div className={`skills react ${scroll ? "scroll1" : null}`}>{scroll ? <h6><CountUp end={90} duration={1} />%</h6> : <h6>0%</h6>}</div>
-          </div>
-
-
-          <p>JAVASCRIPT</p>
-          <div className="container">
-            <div className={`skills js ${scroll ? "scrollJS" : null}`}>{scroll ? <h6><CountUp end={90} duration={1} />%</h6> : <h6>0%</h6>}</div>
-          </div>
-
-          <p>GITHUB</p>
-          <div className="container">
-            <div className={`skills github ${scroll ? "scroll2" : null}`}>{scroll ? <h6><CountUp end={80} duration={1} />%</h6> : <h6>0%</h6>}</div>
-          </div>
-
-          <p>NODE</p>
-          <div className="container">
-            <div className={`skills node ${scroll ? "scroll3" : null}`}>{scroll ? <h6><CountUp end={75} duration={1} />%</h6> : <h6>0%</h6>}</div>
-          </div>
-
-
-          <p>MONGODB</p>
-          <div className="container">
-            <div className={`skills mongodb ${scroll ? "scroll4" : null}`}>{scroll ? <h6><CountUp end={70} duration={1} />%</h6> : <h6>0%</h6>}</div>
-          </div>
-
-          <p>BOOTSTRAP</p>
-          <div className="container">
-            <div className={`skills bootstrap ${scroll ? "scroll5" : null}`}>{scroll ? <h6><CountUp end={60} duration={1} />%</h6> : <h6>0%</h6>}</div>
-          </div>
-
-
-
-
-        </div>
+    <section id='skills' className='sidebar-page-container'>
+      <div className='sidebar-left-side component-wrapper-class'>
+        <h1 className='education-header'>EDUCATION</h1>
+        <Timeline />
       </div>
-    </div>
+      <div className="sidebar-right-side component-wrapper-class">
+        {/* when u scroll to this section the animations trigger  */}
+        <h1 className='specialize-header'>FOCUS</h1>
+
+        <p>REACT</p>
+        <div className="container">
+          <div className={`skills react ${scroll ? "scroll1" : null}`}>{scroll ? <h6><CountUp end={90} duration={1} />%</h6> : <h6>0%</h6>}</div>
+        </div>
+
+
+        <p>JAVASCRIPT</p>
+        <div className="container">
+          <div className={`skills js ${scroll ? "scrollJS" : null}`}>{scroll ? <h6><CountUp end={90} duration={1} />%</h6> : <h6>0%</h6>}</div>
+        </div>
+
+        <p>GITHUB</p>
+        <div className="container">
+          <div className={`skills github ${scroll ? "scroll2" : null}`}>{scroll ? <h6><CountUp end={80} duration={1} />%</h6> : <h6>0%</h6>}</div>
+        </div>
+
+        <p>NODE</p>
+        <div className="container">
+          <div className={`skills node ${scroll ? "scroll3" : null}`}>{scroll ? <h6><CountUp end={75} duration={1} />%</h6> : <h6>0%</h6>}</div>
+        </div>
+
+
+        <p>MONGODB</p>
+        <div className="container">
+          <div className={`skills mongodb ${scroll ? "scroll4" : null}`}>{scroll ? <h6><CountUp end={70} duration={1} />%</h6> : <h6>0%</h6>}</div>
+        </div>
+
+        <p>BOOTSTRAP</p>
+        <div className="container">
+          <div className={`skills bootstrap ${scroll ? "scroll5" : null}`}>{scroll ? <h6><CountUp end={60} duration={1} />%</h6> : <h6>0%</h6>}</div>
+        </div>
+
+
+
+
+      </div>
+    </section>
   )
 }
 

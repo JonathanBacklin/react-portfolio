@@ -4,6 +4,7 @@
 /* rgb(240, 32, 74) RED */
 /* #f9f9f9  WHITE*/
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     text-decoration: none;
     text-transform: uppercase;
